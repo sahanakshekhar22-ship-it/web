@@ -213,7 +213,134 @@
       }
     }
   </style>
+  
 </head>
 
 <body>
-  <
+
+<header>
+  <div class="logo">Sahana.dev</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#learning">Learning</a>
+    <a href="#interests">Interests</a>
+    <a href="#goals">Goals</a>
+  </nav>
+  <button id="themeToggle" type="button">☀️ / 🌙 Theme</button>
+</header>
+
+<main>
+  <section class="hero" id="about">
+    <p class="eyebrow">Computer Science Student</p>
+    <h1>Hey, I'm Sahana <span class="highlight">K S.</span></h1>
+    <p>I'm at the beginning of my coding journey. I'm learning programming fundamentals, exploring technology, and discovering what I can create as my skills grow.</p>
+    <div class="actions">
+      <a class="primary" href="#learning">Explore my journey</a>
+      <a href="https://github.com/sahanakshekhar22-ship-it" target="_blank" rel="noopener noreferrer">Visit my GitHub →</a>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education 🎓</h2>
+    <div class="card">
+      <h3>Computer Science Engineering</h3>
+      <p>Jain Institute of Technology, Davanagere</p>
+      <p>Currently pursuing my undergraduate studies.</p>
+    </div>
+  </section>
+
+  <section id="learning">
+    <h2>What I'm Learning 🌱</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>💻 Programming</h3>
+        <p>Learning Python and C fundamentals, logic and problem-solving.</p>
+      </article>
+      <article class="card">
+        <h3>🌐 Web Development</h3>
+        <p>Exploring HTML, CSS and JavaScript.</p>
+      </article>
+      <article class="card">
+        <h3>🧩 Computer Science</h3>
+        <p>Studying Data Structures and Algorithms step by step.</p>
+      </article>
+      <article class="card">
+        <h3>🛠️ Developer Tools</h3>
+        <p>Getting familiar with VS Code, Git and GitHub.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="interests">
+    <h2>Technology That Interests Me 🔭</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>🤖 Artificial Intelligence</h3>
+        <p>Exploring how AI can help solve problems.</p>
+      </article>
+      <article class="card">
+        <h3>🌐 IoT & AIoT</h3>
+        <p>Exploring connected devices and AI-powered systems.</p>
+      </article>
+      <article class="card">
+        <h3>🔐 Cybersecurity</h3>
+        <p>Learning about digital safety, privacy and secure systems.</p>
+      </article>
+      <article class="card">
+        <h3>💡 Problem Solving</h3>
+        <p>Building logical thinking through coding practice.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="goals">
+    <h2>My Goals 🎯</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Build strong fundamentals</h3>
+        <p>Understand programming concepts instead of just copying code.</p>
+      </article>
+      <article class="card">
+        <h3>Create projects</h3>
+        <p>Build small projects as my skills develop.</p>
+      </article>
+      <article class="card">
+        <h3>Keep exploring</h3>
+        <p>Practise consistently and work toward hackathons.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects & Practice 🚀</h2>
+    <div class="card">
+      <h3>Personal Portfolio Website</h3>
+      <p>This website is part of my journey into web development.</p>
+      <p><a href="https://github.com/sahanakshekhar22-ship-it/web" target="_blank" rel="noopener noreferrer">View my website repository →</a></p>
+      <p>More projects will be added as I learn and build them.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Find Me on GitHub 🤝</h2>
+    <p>I'll keep updating this website as I learn and make progress.</p>
+    <p><a href="https://github.com/sahanakshekhar22-ship-it" target="_blank" rel="noopener noreferrer">@sahanakshekhar22-ship-it</a></p>
+  </section>
+</main>
+
+<footer>
+  <p>Learn. Build. Grow. Repeat. ✨</p>
+  <p>© <span id="year"></span> Sahana K S</p>
+</footer>
+
+<script>
+  document.getElementById("themeToggle").addEventListener("click", function () {
+    document.body.classList.toggle("light");
+  });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
+
